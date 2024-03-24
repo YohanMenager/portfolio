@@ -56,6 +56,10 @@ ul {
 	  -webkit-border-radius: 5px !important;
 	  -moz-border-radius: 5px !important;
 	  border-radius: 5px !important;
+	  position: sticky;
+	  width: 100%;
+	  z-index: 10;
+	  top: 0;
   }
   
   
@@ -105,135 +109,9 @@ ul {
 	/* text-shadow: 0px 3px 2px red; */
 	font-size: 10vw;
 }
-.dark
-{
-	background-color: #555;
-	color: white;
-}
-.light
-{
-	background-color: #eee;
-}
-.flex
-{
-	display: flex;
-}
-.pad-sides
-{
-	padding-left : 10px;
-	padding-right : 10px;
-}
-.big-pad-sides
-{
-	padding-left : 100px;
-	padding-right : 100px;
-}
-.pad-up-down
-{
-	padding-top : 10px;
-	padding-bottom : 10px;
-}
-.full-width
-{
-	width: 100%;
- }
 .white-text
 {
 	color: white
-}
-.section
-{
-	margin-top: 100px;
-	display: table;
-	align-items: center;
-}
-.section div img
-{
-	vertical-align:middle;
-	display: table-cell;
-  width: 100%;
-  max-width: 20em;
-  height: auto;
-}
-.section div
-{
-	vertical-align:middle;
-	display: table-cell;
-	height: 400px;
-}
-.section h2
-{
-	display: table-cell;
-}
-.section div p
-{
-	color: #aaa;
-}
-.section div p a
-{
-	text-decoration: none;
-}
-.section div a
-{
-	text-decoration: underline;
-}
-.section div h2
-{
-	font-size: 3vw;
-}
-.section div p
-{
-	font-size: 1vw;
-}
-.section div a
-{
-	font-size: 1vw;
-}
-#articles h2
-{
-	font-size: 4vw;
-	text-align: center;
-}
-#articles div
-{
-	width: 100%;
-	height: 300px;
-	margin: auto;
-}
-#articles div div
-{
-	background-color: #eee;
-	box-shadow: 4px 4px #555;
-	border-radius: 5px;
-	width: 15%;
-	margin-right: 10px;
-	margin-left: 10px;
-	align-items: center;
-}
-#articles div div h3
-{
-	text-decoration: underline;
-	color: black;
-	font-weight: bold;
-}
-#articles div div p
-{
-	text-decoration: underline;
-	color: grey;
-}
-#articles div div div
-{
-	overflow: hidden;
-	height: 50%;
-	background: unset;
-	box-shadow: unset;
-	width: 100%;
-	border: unset;
-	margin: unset;
-}
-#articles div div div img
-{
-	width: 100%;
 }
 
 #corps
@@ -290,6 +168,7 @@ header
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100%;
+	width: 100%;
 }
 header h1
 {
@@ -317,6 +196,17 @@ img
 {
 	max-width: 100%;
 }
+a img
+{
+	position: relative;
+	transition: 0.5s;
+}
+a img:hover
+{
+	max-width: 101%;
+	width: 101%;
+}
+
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
@@ -413,8 +303,8 @@ img
   }
   .submit-btn .input-data{
 	overflow: hidden;
-	height: 45px!important;
-	width: 25%!important;
+	height: 8vw!important;
+	width: 10vw!important;
   }
   .submit-btn .input-data .inner{
 	height: 100%;
@@ -431,10 +321,9 @@ img
 	background: none;
 	border: none;
 	color: #fff;
-	font-size: 17px;
+	font-size: 2vw;
 	font-weight: 500;
 	text-transform: uppercase;
-	letter-spacing: 1px;
 	cursor: pointer;
 	position: relative;
 	z-index: 2;
