@@ -157,8 +157,6 @@ ul {
 	  display: block;
   }
   
-  
-
 
 .title
 {
@@ -450,14 +448,11 @@ a img:hover
   }
   .article
   {
-	min-height: 25vw !important;
-  }
-  .article .card-body a
-  {
-	position: absolute;
-	bottom: 10px;
+	min-height: 100%;
   }
 
+
+  
     /* ================================= 
 	Media Queries
   ==================================== */
@@ -497,4 +492,10 @@ a img:hover
   .corps{
 	  width: 100%;
   }
+}
+
+@media (min-width: 576px) {
+    .w-sm-100 {
+        width: 100% !important;
+    }
 }
