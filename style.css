@@ -492,6 +492,12 @@ a img:hover
   .corps{
 	  width: 100%;
   }
+  .hero {
+	background: none;
+	-webkit-animation: none;
+	animation: none;
+}
+
 }
 
 @media (min-width: 576px) {
