@@ -352,8 +352,10 @@ a img:hover
   }
   .submit-btn .input-data{
 	overflow: hidden;
-	height: 8vw!important;
-	width: 10vw!important;
+	height: 50px!important;
+	width: 150px!important;
+	border-radius: 20px;
+
   }
   .submit-btn .input-data .inner{
 	height: 100%;
@@ -370,9 +372,9 @@ a img:hover
 	background: none;
 	border: none;
 	color: #fff;
-	font-size: 2vw;
+	font-size: 32px;
 	font-weight: 500;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	cursor: pointer;
 	position: relative;
 	z-index: 2;
